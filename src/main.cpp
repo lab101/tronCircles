@@ -6,7 +6,9 @@
 int main( ){
 
     ofAppGlutWindow window;
+	#if defined (TARGET_OSX) 
 	window.setGlutDisplayString("rgba double samples>=4 depth"); 
+	#endif
 
 	ofSetupOpenGL(&window, 1280,1024, OF_WINDOW);			// <-------- setup the GL context
 
